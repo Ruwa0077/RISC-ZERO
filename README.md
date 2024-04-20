@@ -64,14 +64,17 @@ Node.js
 我们将安装 nvm 以通过在终端中使用以下命令下载 shell 脚本来更改节点版本：
 
 curl -sL https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh -o install_nvm.sh
+
 此命令下载文件，可能看起来什么也没发生。
 
 接下来我们将通过在终端中输入以下命令来安装 NVM：
 
 sh install_nvm.sh
+
 您可能需要接受许可条款。如果它告诉您这是必需的，您将需要在终端中运行它告诉您的命令；在 Mac 上这可能是
 
 sudo xcodebuild -license
+
 您需要按照提示操作，然后sh install_nvm.sh再次重复该命令。
 
 如果安装成功，它会要求您重新启动终端。如果您打开了任何其他终端窗口，请先在其中完成您的工作。现在，关闭终端（例如使用 ⌘Q），然后通过与之前相同的过程重新打开它（按 ⌘<space>，在打开的 Spotlight 搜索栏中输入“Terminal”，然后按 <enter>）。
@@ -90,7 +93,9 @@ sudo xcodebuild -license
 在终端中，输入
 
 mkdir ~/p0tion-tmp
+
 然后按<回车>键。这创建了您的目录，现在通过在终端中键入来导航到该目录
+
 
 cd ~/p0tion-tmp
 ‍
@@ -103,7 +108,10 @@ cd ~/p0tion-tmp
 首先输入以下命令安装版本：
 
 nvm install 16.20
+
+
 然后通过输入以下内容来使用该版本：
+
 
 nvm use 16.20
 ‍
@@ -112,6 +120,7 @@ nvm use 16.20
 ‍
 
 现在您将安装运行仪式的工具。继续在终端中输入
+
 
 npm i @p0tion/phase2cli
 ‍
@@ -122,6 +131,8 @@ npm i @p0tion/phase2cli
 如上所述，需要满足一定条件的GitHub 帐户才能进行贡献。要授权您的帐户，请输入以下命令：
 
 npx phase2cli auth
+
+
 这会将身份验证代码复制到剪贴板，打开 Web 浏览器，然后将您带到 GitHub 站点，要求授予 p0tion 权限以使用 GitHub 的“Gists”功能。将剪贴板的内容粘贴到该网站中，然后单击按钮进行授权。 GitHub 会告诉你“恭喜你，一切就绪！”然后您可以返回航站楼。
 
 ‍
@@ -131,7 +142,10 @@ npx phase2cli auth
 
 您已准备好为仪式做出贡献。返回终端，输入：
 
+
 npx phase2cli contribute
+
+
 系统会询问您要参加哪个仪式。
 
 RISC Zero STARK-to_SNARK Prover仪式应该已经突出显示，因此按 <enter> 键选择它。
@@ -158,9 +172,13 @@ RISC Zero STARK-to_SNARK Prover仪式应该已经突出显示，因此按 <enter
 仪式贡献完成后，清理文件和 GitHub 授权可能是个好主意。从终端输入
 
 npx phase2cli clean
+
+
 并按 <enter> 键，然后键入
 
 npx phase2cli logout
+
+
 并按 <enter> 键，然后转到GitHub 上的授权应用程序列表并删除pse-p0tion-production.~/p0tion-tmp如果您愿意，也可以删除您创建的文件夹。
 
 ‍
